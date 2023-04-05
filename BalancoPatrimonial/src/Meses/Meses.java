@@ -19,8 +19,7 @@ public class Meses {
 		this.marco = marco;
 	}
 
-	public Meses(double janeiro, double fevereiro, double marco, double abril, double maio, double junho,
-			double julho) {
+	public Meses(double janeiro, double fevereiro, double marco, double abril, double maio, double junho,double julho) {
 		this.janeiro = janeiro;
 		this.fevereiro = fevereiro;
 		this.marco = marco;
