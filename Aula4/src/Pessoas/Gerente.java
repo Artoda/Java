@@ -1,15 +1,14 @@
 package Pessoas;
 
-public class Gerente extends Funcionario {
+public class Gerente extends Assistente {
 
-	private int senha;
-	private int numeroFuncionarios;
-	
-	public Gerente (String nome, String cpf, int senha) {
-		super(nome,cpf);
+	protected int senha;
+	protected int numeroFuncionarios;
+
+	public Gerente(String nome, String cpf, double salario, String matricula, int senha) {
+		super(nome, cpf, salario, matricula);
 		this.senha = senha;
 	}
-	
 
 	public boolean autentica(int senha) {
 		if (this.senha == senha) {
@@ -37,4 +36,7 @@ public class Gerente extends Funcionario {
 		this.numeroFuncionarios = numeroFuncionarios;
 	}
 
+	public double getBonificacao() {
+		return super.getBonificacao() + (this.getSalario() * 0.15);
+	}
 }

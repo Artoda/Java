@@ -13,21 +13,20 @@ public class Principal {
 
 		// TUDO CONTA
 		ContaPoupanca aluno = new ContaPoupanca(); 
-		ContaCorrente aluno2 = new ContaCorrente(); 
+		ContaCorrente aluno2 = new ContaCorrente(5, "Carma", 2000, "Corrente", 2500, 10000); 
 		ContaPoupancaEspecial aluno3 = new ContaPoupancaEspecial(); 
-		ContaCorrenteEspecial aluno4 = new ContaCorrenteEspecial(); 
+		ContaCorrenteEspecial aluno4 = new ContaCorrenteEspecial(0, null, 0, null, 0, 0); 
 
 		aluno.setRendimento(2);
 		aluno.getNumero();
-		aluno2.getNumero();
-		aluno2.setTarifa(1);
 		aluno3.setPoupanca(5);
 		aluno4.setInvestimento(10);
-		System.out.println(aluno.getRendimento()); 
-		System.out.println(Conta.getTotalDeContas());		
-		System.out.println(aluno2.getTarifa());
-		System.out.println(aluno3.getPoupanca());
-		System.out.println(aluno4.getInvestimento());
+		//System.out.println(aluno.getRendimento()); 
+		//System.out.println(Conta.getTotalDeContas());		
+		System.out.println(aluno2.toString());
+		System.out.println(aluno2.getTitular());
+		//System.out.println(aluno3.getPoupanca());
+		//System.out.println(aluno4.getInvestimento());
 //		Conta alunos = new Conta();
 //		alunos.setAgencia(1);
 //		alunos.setTitular("Alunos");

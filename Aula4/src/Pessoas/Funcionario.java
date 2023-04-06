@@ -2,17 +2,21 @@ package Pessoas;
 
 public class Funcionario {
 
-	private String nome;
-	private String cpf;
-	private double salario;
-	private String matricula;
-	
+	protected String nome;
+	protected String cpf;
+	protected double salario;
+	protected String matricula;
+
 	public Funcionario() {
-		
+
 	}
-	public Funcionario(String nome, String cpf) {
+
+	public Funcionario(String nome, String cpf, double salario, String matricula) {
 		this.nome = nome;
 		this.cpf = cpf;
+		this.salario = salario;
+		this.matricula = matricula;
+
 	}
 
 	public String getNome() {
@@ -47,4 +51,7 @@ public class Funcionario {
 		this.matricula = matricula;
 	}
 
+	public double getBonificacao() {
+		return this.salario * 0.1;
+	}
 }

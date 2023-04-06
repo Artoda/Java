@@ -3,10 +3,10 @@ package contas;
 public class Conta {
 
 	protected int numero;
-	private int agencia;
-	private String titular;
-	private double saldo;
-	private String tipo;
+	protected int agencia;
+	protected String titular;
+	protected double saldo;
+	protected String tipo;
 
 	private static int totalDeContas = 0;
 
@@ -112,6 +112,6 @@ public class Conta {
 
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
-	};
+	}
 
 }
