@@ -3,6 +3,15 @@ package Pessoas;
 public class Professores extends Empregados {
 	protected double horasDeAula;
 
+	public Professores() {
+
+	}
+
+	public Professores(String nome, double salario, double horasDeaula) {
+		super(nome, salario);
+		this.horasDeAula = horasDeaula;
+	}
+
 	public double getHorasDeAula() {
 		return horasDeAula;
 	}
@@ -20,8 +29,8 @@ public class Professores extends Empregados {
 	}
 
 	@Override
-	public String toString() {
-		return "Professores [horasDeAula=" + horasDeAula + ", nome=" + nome + ", salario=" + getGastos() + "]";
+	public String getInfo() {
+		return super.getInfo() + " " + "Horas de aulas=" + horasDeAula;
 	}
 
 }

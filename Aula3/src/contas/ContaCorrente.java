@@ -12,6 +12,10 @@ public class ContaCorrente extends Conta {
 
 	}
 
+	public ContaCorrente() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public double getTarifa() {
 		return tarifa;
 	}
@@ -28,10 +32,16 @@ public class ContaCorrente extends Conta {
 		this.limite = limite;
 	}
 
-	public String toString() {
-		return "getTarifa()=" + getTarifa() + ", getLimite()=" + getLimite() + ", getSaldo()=" + getSaldo()
-				+ ", getNumero()=" + getNumero() + ", getAgencia()=" + getAgencia() + ", getTitular()=" + getTitular()
-				+ ", getTipo()=" + getTipo() + "]";
+	public void imprimeExtrato() {
+		// SimpleDataFormat sdf = new SimpleDataFormat("dd/MM/aaaa");
+		// Data data = new Data();
+		System.out.println("Titular:" + this.getTitular());
+		System.out.println("Saldo:" + this.getSaldo());
+
+	}
+
+	public void programaSocial() {
+
 	}
 
 }

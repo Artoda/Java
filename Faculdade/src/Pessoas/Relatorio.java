@@ -1,16 +1,16 @@
 package Pessoas;
 
 public class Relatorio {
-	
-	public static void Relatorio(Empregados... Empregados) {
-		
+
+	public void Relatorios(Empregados... Empregados) {
+
 		double gastosTotais = 0;
 		for (Empregados emp : Empregados) {
-			System.out.println(emp.getNome()+ emp.getGastos());
+			System.out.println(emp.getNome() + " " + emp.getGastos());
 			gastosTotais += emp.getGastos();
 		}
-		System.out.println(gastosTotais);
-		
+		System.out.println("Gastos totais:" + gastosTotais);
+
 	}
 
 }

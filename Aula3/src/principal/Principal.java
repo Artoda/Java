@@ -11,42 +11,12 @@ public class Principal {
 	public static void main(String[] args) {
 		System.out.println("Sistema Bancario");
 
-		// TUDO CONTA
-		ContaPoupanca aluno = new ContaPoupanca(); 
-		ContaCorrente aluno2 = new ContaCorrente(5, "Carma", 2000, "Corrente", 2500, 10000); 
-		ContaPoupancaEspecial aluno3 = new ContaPoupancaEspecial(); 
-		ContaCorrenteEspecial aluno4 = new ContaCorrenteEspecial(0, null, 0, null, 0, 0); 
-
-		aluno.setRendimento(2);
-		aluno.getNumero();
-		aluno3.setPoupanca(5);
-		aluno4.setInvestimento(10);
-		//System.out.println(aluno.getRendimento()); 
-		//System.out.println(Conta.getTotalDeContas());		
-		System.out.println(aluno2.toString());
-		System.out.println(aluno2.getTitular());
-		//System.out.println(aluno3.getPoupanca());
-		//System.out.println(aluno4.getInvestimento());
-//		Conta alunos = new Conta();
-//		alunos.setAgencia(1);
-//		alunos.setTitular("Alunos");
-//		alunos.depositar(10000.0);
-//		alunos.setTipo("Corrente");
-//		System.out.println("O saldo da conta alunos é: " + alunos.getNumero());
-//		
-//		Conta professor = new Conta(1, "Professor", 100.0, "Corrente");
-//		professor.setAgencia(1);
-//		professor.setTitular("Professor");
-//		professor.depositar(100.0);
-//		professor.setTipo("Corrente");
-//		System.out.println("O saldo da conta professor é: " + professor.getNumero());
-//		
-//		alunos.transferir(professor, 5000);
-//		System.out.println("O saldo da conta professor é: " + professor.getSaldo());
-//		professor.depositar(0);
-//		professor.sacar(0);
-//		System.out.println("O saldo da conta professor é: " + professor.getNumero());
-//	
+		Conta conta = new ContaCorrente();
+		conta.setTitular("Marcelo");
+		conta.setSaldo(5999);
+		
+		System.out.println("Conta de " + conta.getTitular());
+		conta.imprimeExtrato();
 	}
 
 }

@@ -4,6 +4,15 @@ public class Empregados {
 	protected String nome;
 	protected double salario;
 
+	public Empregados() {
+
+	}
+
+	public Empregados(String nome, double salario) {
+		this.nome = nome;
+		this.salario = salario;
+	}
+
 	public String getNome() {
 		return nome;
 	}
@@ -22,6 +31,10 @@ public class Empregados {
 
 	public double getGastos() {
 		return getSalario();
+	}
+
+	public String getInfo() {
+		return "Nome=" + nome + ", Salario=" + getGastos() + ",";
 	}
 
 }

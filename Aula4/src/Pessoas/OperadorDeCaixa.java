@@ -9,4 +9,12 @@ public class OperadorDeCaixa extends Funcionario {
 	public double getBonificacao() {
 		return super.getBonificacao();
 	}
+
+	public void informacao() {
+		System.out.println(this.getNome());
+		System.out.println(this.getCpf());
+		System.out.println(this.getSalario());
+		System.out.println(this.getMatricula());
+	}
+
 }

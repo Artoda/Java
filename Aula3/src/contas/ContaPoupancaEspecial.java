@@ -1,6 +1,6 @@
 package contas;
 
-public class ContaPoupancaEspecial extends ContaPoupanca {
+public class ContaPoupancaEspecial extends ContaPoupanca implements ContaFacil {
 
 	private double cartaoDebito;
 	private double poupanca;
@@ -19,6 +19,11 @@ public class ContaPoupancaEspecial extends ContaPoupanca {
 
 	public void setPoupanca(double poupanca) {
 		this.poupanca = poupanca;
+	}
+
+	public void programaSocial() {
+		
+		
 	}
 
 }

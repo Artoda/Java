@@ -9,6 +9,12 @@ public class Gerente extends Assistente {
 		super(nome, cpf, salario, matricula);
 		this.senha = senha;
 	}
+	public void informacao() {
+		System.out.println(this.getNome());
+		System.out.println(this.getCpf());
+		System.out.println(this.getSalario());
+		System.out.println(this.getMatricula());
+	}
 
 	public boolean autentica(int senha) {
 		if (this.senha == senha) {

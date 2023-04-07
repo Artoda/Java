@@ -1,11 +1,13 @@
 package Pessoas;
 
-public class Funcionario {
+public abstract class Funcionario implements Bonicacao {
 
 	protected String nome;
 	protected String cpf;
 	protected double salario;
 	protected String matricula;
+
+	public abstract void informacao();
 
 	public Funcionario() {
 
@@ -39,10 +41,6 @@ public class Funcionario {
 		return salario;
 	}
 
-	public void setSalario(double salario) {
-		this.salario = salario;
-	}
-
 	public String getMatricula() {
 		return matricula;
 	}
@@ -54,4 +52,9 @@ public class Funcionario {
 	public double getBonificacao() {
 		return this.salario * 0.1;
 	}
+
+	public void salario(double salario) {
+		this.salario = salario;
+	}
+
 }

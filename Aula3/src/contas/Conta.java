@@ -1,6 +1,6 @@
 package contas;
 
-public class Conta {
+public abstract class Conta implements ContaFacil {
 
 	protected int numero;
 	protected int agencia;
@@ -9,6 +9,8 @@ public class Conta {
 	protected String tipo;
 
 	private static int totalDeContas = 0;
+
+	public abstract void imprimeExtrato();
 
 	public static int getTotalDeContas() {
 		return totalDeContas;

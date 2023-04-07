@@ -8,14 +8,14 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		Empregados professor = new Professores();
-		professor.setNome("Buiua");
-		professor.setSalario(78000);
-		((Professores) (professor)).setHorasDeAula(200);
-		System.out.println(professor.toString());
-		
-		Relatorio teste = new Relatorio();
-		teste.Relatorio(professor);
+		Empregados professor = new Professores("Carlos", 5000, 200);
+
+		Empregados professor2 = new Professores("Carlá", 6000, 15000);
+
+		System.out.println(professor2.getInfo());
+
+		Relatorio relatorio = new Relatorio();
+		relatorio.Relatorios(professor, professor2);
 
 	}
 

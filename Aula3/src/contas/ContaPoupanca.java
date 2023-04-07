@@ -14,4 +14,10 @@ public class ContaPoupanca extends Conta {
 		this.rendimento = rendimento;
 	}
 
+	public void imprimeExtrato() {
+		System.out.println("Titular:" + this.getTitular());
+		System.out.println("Saldo:" + this.getSaldo());
+		
+	}
+
 }
