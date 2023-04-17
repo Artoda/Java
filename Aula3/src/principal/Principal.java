@@ -10,13 +10,16 @@ public class Principal {
 
 	public static void main(String[] args) {
 		System.out.println("Sistema Bancario");
+		try {
+			ContaCorrente conta = new ContaCorrente();
+			conta.setTitular("Marcelo");
+			conta.setSaldo(5999);
 
-		Conta conta = new ContaCorrente();
-		conta.setTitular("Marcelo");
-		conta.setSaldo(5999);
-		
-		System.out.println("Conta de " + conta.getTitular());
-		conta.imprimeExtrato();
+			System.out.println("Conta de " + conta.getTitular());
+			conta.imprimeExtrato();
+		} catch (Exception e) {
+			System.out.println("error");
+		}
 	}
 
 }

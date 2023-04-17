@@ -8,7 +8,6 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		Meses mess = new Meses();
 		Scanner scanner = new Scanner(System.in);
 		double mes11;
 		double mes12;

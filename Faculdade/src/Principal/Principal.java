@@ -1,12 +1,15 @@
 package Principal;
 
+import java.io.IOException;
+
 import Pessoas.Empregados;
 import Pessoas.Professores;
 import Pessoas.Relatorio;
+import io.Escritor;
 
 public class Principal {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		Empregados professor = new Professores("Carlos", 5000, 200);
 
@@ -16,6 +19,8 @@ public class Principal {
 
 		Relatorio relatorio = new Relatorio();
 		relatorio.Relatorios(professor, professor2);
+		
+		
 
 	}
 
